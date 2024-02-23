@@ -1,0 +1,217 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d2dbd1;
+  }
+  
+  .app {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .deck {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #333;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+ }
+
+  p {
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+ }
+  
+  .deck:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.1);
+  }
+  
+  .drawn-cards {
+    margin-top: 20px;
+  }
+  
+  .card {
+    
+    font-size: 2rem;
+    padding: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    border: 1px solid #333;
+    animation: card-flip 1s infinite;
+  }
+
+  .inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  @keyframes card-flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #21037a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    animation: button-pulse 1s infinite;
+  }
+  
+  @keyframes button-pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .inputField{
+    padding:10px;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-top: 10px;
+  }
+  .scoreboard {
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+/*
+
+.app {
+  font-family: sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.info {
+  width: 100%;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.deck {
+  width: 120px;
+  height: 180px;
+  border: 2px solid #2196f3;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.deck:hover {
+  background-color: #f5f5f5;
+}
+
+.drawn-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  
+  border: 2px solid #2196f3;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.scoreboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+*/
